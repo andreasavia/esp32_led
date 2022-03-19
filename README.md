@@ -1,6 +1,26 @@
 # ESP32-S3 Blink LED
 
-This is a project created to blink the built-in addressable LED of the ESP32-S3 Board.
+The project contains the code to blink the built-in addressable LED of the ESP32-S3 Board. 
+
+## Content
+
+The project **esp32_blink_led** contains one source file in C language [main.c](main/main.c). The file is located in folder [main](main).
+
+ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt`
+files that provide set of directives and instructions describing the project's source files and targets
+(executable, library, or both). 
+
+Below is short explanation of remaining files in the project folder.
+
+```
+├── CMakeLists.txt
+├── main
+│   ├── CMakeLists.txt
+│   └── main.c
+└── README.md                  This is the file you are currently reading
+```
+
+The project was created based on the template provided by the EspressIf Toolchain by running the command 'idf.py create-project'.
 
 ## Hardware
 
@@ -31,4 +51,5 @@ To configure, build and flash the project:
 * Run `idf.py menuconfig` to open the project configuration menu
 * `idf.py build` to build the project.
 * Follow the printed instructions to flash and monitor, or run `idf.py -p PORT flash monitor`.
+
 
