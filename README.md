@@ -2,6 +2,7 @@
 
 The project contains the code to blink the built-in addressable LED of the ESP32-S3 Board. 
 
+
 ## Content
 
 The project **esp32_blink_led** contains one source file in C language [main.c](main/main.c). The file is located in folder [main](main).
@@ -21,6 +22,7 @@ Below is short explanation of remaining files in the project folder.
 ```
 
 The project was created based on the template provided by the EspressIf Toolchain by running the command 'idf.py create-project'.
+
 
 ## Hardware
 
@@ -42,9 +44,11 @@ See [LED Strip Example](https://github.com/espressif/esp-idf/tree/master/example
 
 ## Toolchain
 
-To configure the laptop with the required development environment be sure to follow the [ESP-IDF Getting Started Guide](https://idf.espressif.com/)
+To configure the laptop with the required development environment is recommended to use VS Code and the Espressif IDF extension. To use the extension see the [docs](https://github.com/espressif/vscode-esp-idf-extension/blob/HEAD/docs/ONBOARDING.md).
 
-To configure, build and flash the project:
+
+
+Alternatively the following [ESP-IDF Getting Started Guide](https://idf.espressif.com/) explains how to configure, build and flash the project with the following steps:
 
 * Change into the directory of the project.
 * Run `idf.py set-target TARGET` to select the correct chip target to build before opening the project configuration menu. By default the target is `esp32`. For all options see `idf.py set-target --help`
